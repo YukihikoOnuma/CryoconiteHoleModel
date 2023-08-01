@@ -4,20 +4,20 @@
 
 <B>1. Preparation of an input meteorological data</B>
 <br>[SIGMA-B_LT20140714-_Lv1_3.csv] is an example.
-<br>year
-<br>month
-<br>day
-<br>hour
-<br>doy: day of year
-<br>at*: air temperature (degC)
-<br>ws*: wind speed (m s^-1)
-<br>rh*: relative humidity (0-1)
-<br>srd*: downward shortwave radiation (W m^-2)
-<br>sru: upward shortwave radiation (W m^-2)
-<br>lrd*: downward longwave radiation (W m^-2)
-<br>lru*: upward longwave radiation (W m^-2)
-<br>srf: observed surface level (m)
-<br>ap*: air pressure (hPa)
+<br><B>year</B>
+<br><B>month</B>
+<br><B>day</B>
+<br><B>hour</B>
+<br><B>doy</B>: day of year
+<br><B>at*</B>: air temperature (degC)
+<br><B>ws*</B>: wind speed (m s^-1)
+<br><B>rh*</B>: relative humidity (0-1)
+<br><B>srd*</B>: downward shortwave radiation (W m^-2)
+<br><B>sru</B>: upward shortwave radiation (W m^-2)
+<br><B>lrd*</B>: downward longwave radiation (W m^-2)
+<br><B>lru*</B>: upward longwave radiation (W m^-2)
+<br><B>srf</B>: observed surface level (m)
+<br><B>ap*</B>: air pressure (hPa)
 
 <br>For year to doy, values should be "integer" while the other meteorological variables (from at to ap) should be "real". "should be real" means that, even if a value appears "0" on an excel sheet, it should be saved as "0.0".
 <br>Parameters with asterisk [*] should be prepared to calculate the CH depth. [sru] and [srf] are not always required but, if unavailable, put any dummy values.
@@ -36,36 +36,36 @@
 
 <B>5. Output file</B>
 <br>You can change the file name at the second line of parameter.ini.
-<br>days_for_graph: day and time for graph
-<br>month
-<br>day
-<br>hour 
-<br>sd_obs: observed ice surface (m) note: the more positive, the more lowering
-<br>sd_calc: calculated ice surface (m) note: the more positive, the more lowering
-<br>nsr_ice: net shortwave radiation at ice surface (W m^-2)
-<br>nlr_ice: net longwave radiation at ice surface (W m^-2)
-<br>sh_ice: sensible heat at ice surface (W m^-2)
-<br>lh_ice: latent heat at ice surface (W m^-2)
-<br>melt_ice: melting heat at ice surface (W m^-2)
-<br>nsr_cryo: net shortwave radiation at CH bottom (W m^-2)
-<br>nlr_cryo: net longwave radiation at CH bottom (W m^-2)
-<br>sh_cryo: sensible heat at CH bottom (W m^-2)
-<br>lh_cryo: latent heat at CH bottom (W m^-2)
-<br>melt_cryo: melting heat at CH bottom (W m^-2)
-<br>cryo_angle: zenith angle of CH edge (radian)
-<br>solar_angle: zenith angle of Sun (radian
-<br>d_nsr: difference of net shortwave radiation between ice surface and CH bottom (W m^-2)
-<br>d_nlr: difference of net longwave radiation between ice surface and CH bottom (W m^-2)
-<br>d_sh: difference of sensible heat between ice surface and CH bottom (W m^-2)
-<br>d_lh: difference of latent heat between ice surface and CH bottom (W m^-2)
-<br>d_melt: difference of melting heat between ice surface and CH bottom (W m^-2)
-<br>cryoconite_depth: cryoconite hole depth (mm) note: the more positive, the deeper CH
-<br>sr: downward shortwaver radiation (W m^-2)
-<br>sr_direct: direct component of SR at ice surface (W m^-2)
-<br>sr_diffuse: diffuse component of SR at ice surface (W m^-2)
-<br>src_direct: direct component of SR at CH bottom (W m^-2)
-<br>src_diffuse: diffuse component of SR at CH bottom (W m^-2)
-<br>t_direct: transmittance of ice for direct component of SR (-)
-<br>t_diffuse: transmittance of ice for diffuse component of SR (-)
-<br>k_direct: extinction coefficient of ice for direct component of SR (m^-1)
-<br>k_diffuse: extinction coefficient of ice for diffuse component of SR (m^-1)
+<br><B>days_for_graph: day and time for graph</B>
+<br><B>month</B>
+<br><B>day</B>
+<br><B>hour</B> 
+<br><B>sd_obs</B>: observed ice surface (m) note: the more positive, the more lowering
+<br><B>sd_calc</B>: calculated ice surface (m) note: the more positive, the more lowering
+<br><B>nsr_ice</B>: net shortwave radiation at ice surface (W m^-2)
+<br><B>nlr_ice</B>: net longwave radiation at ice surface (W m^-2)
+<br><B>sh_ice</B>: sensible heat at ice surface (W m^-2)
+<br><B>lh_ice</B>: latent heat at ice surface (W m^-2)
+<br><B>melt_ice</B>: melting heat at ice surface (W m^-2)
+<br><B>nsr_cryo</B>: net shortwave radiation at CH bottom (W m^-2)
+<br><B>nlr_cryo</B>: net longwave radiation at CH bottom (W m^-2)
+<br><B>sh_cryo</B>: sensible heat at CH bottom (W m^-2)
+<br><B>lh_cryo</B>: latent heat at CH bottom (W m^-2)
+<br><B>melt_cryo</B>: melting heat at CH bottom (W m^-2)
+<br><B>cryo_angle</B>: zenith angle of CH edge (radian)
+<br><B>solar_angle</B>: zenith angle of Sun (radian
+<br><B>d_nsr</B>: difference of net shortwave radiation between ice surface and CH bottom (W m^-2)
+<br><B>d_nlr</B>: difference of net longwave radiation between ice surface and CH bottom (W m^-2)
+<br><B>d_sh</B>: difference of sensible heat between ice surface and CH bottom (W m^-2)
+<br><B>d_lh</B>: difference of latent heat between ice surface and CH bottom (W m^-2)
+<br><B>d_melt</B>: difference of melting heat between ice surface and CH bottom (W m^-2)
+<br><B>cryoconite_depth</B>: cryoconite hole depth (mm) note: the more positive, the deeper CH
+<br><B>sr</B>: downward shortwaver radiation (W m^-2)
+<br><B>sr_direct</B>: direct component of SR at ice surface (W m^-2)
+<br><B>sr_diffuse</B>: diffuse component of SR at ice surface (W m^-2)
+<br><B>src_direct</B>: direct component of SR at CH bottom (W m^-2)
+<br><B>src_diffuse</B>: diffuse component of SR at CH bottom (W m^-2)
+<br><B>t_direct</B>: transmittance of ice for direct component of SR (-)
+<br><B>t_diffuse</B>: transmittance of ice for diffuse component of SR (-)
+<br><B>k_direct</B>: extinction coefficient of ice for direct component of SR (m^-1)
+<br><B>k_diffuse</B>: extinction coefficient of ice for diffuse component of SR (m^-1)
