@@ -35,7 +35,7 @@ This is out of this instruction. Please prepare it by yourself.
 <h2>4. Operation</h2>
 Open a terminal at the folder containing the code, input data, and parameter files. Compile the code "cryho_disclose_version1.f90", and run the created execute file. You will get an output file [ch_hourly_2014_v3_monitor_at39_di51_id117_ai62.csv] (the file name can be changed. see next).
 <br>The model simulations with parameters observed in Qaanaaq Ice Cap can be conducted by using "shell/cal_obs.sh".
-<br>Note that cryho_disclose_version1_stest.f90, cryho_disclose_version1_Rscexp_LT13.f90 and cryho_disclose_version1_Rscexp_LT01.f90 are model codes for sensitivity tests (for Figs 9, 11a and 11b, respectively). Please use appropriate parameter file (i.e., parameter.ini_2014_S2_v3_stest or parameter.ini_2014_S2_v3_Rscexp). The sensitivity tests can be conducted by using shell scripts (stest.sh and stest_Rscexp.sh).
+<br>Note that cryho_disclose_version1_stest.f90, cryho_disclose_version1_Rscexp_LT13.f90 and cryho_disclose_version1_Rscexp_LT01.f90 are model codes for sensitivity tests (see the above reference). Please use appropriate parameter file (i.e., parameter.ini_2014_S2_v3_stest or parameter.ini_2014_S2_v3_Rscexp). The sensitivity tests can be conducted by using shell scripts (stest.sh and stest_Rscexp.sh).
 
 <h2>5. Output file</h2>
 You can change the file name at the second line of parameter.ini.
