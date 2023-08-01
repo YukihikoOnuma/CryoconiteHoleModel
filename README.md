@@ -1,9 +1,12 @@
-<HTML><h3>Instruction for Cryoconite Hole Model (CryHo)</h3>
+<HTML><h1>Instruction for Cryoconite Hole Model (CryHo)</h1>
 
-<P ALIGN=JUSTIFY>The model was developed by <B>Koji Fujita</B>, Nagoya University, Japan. The study using this model was published in The Cryosphere (Onuma et al., 2023). This text is an instruction to use the model.</P>
+<P ALIGN=JUSTIFY>The model was developed by <B>Koji Fujita</B>, Nagoya University, Japan. The study using this model was published in The Cryosphere <B>(Onuma et al., 2023)</B>. This text is an instruction to use the model.</P>
 
-<B>1. Preparation of an input meteorological data</B>
-<br>[SIGMA-B_LT20140714-_Lv1_3.csv] is an example.
+<B>Reference</B>:
+<br>Onuma, Y., Fujita, K., Takeuchi, N., Niwano, M., and Aoki, T.: Modelling the development and decay of cryoconite holes in Northwest Greenland, <em>The Cryosphere</em> (In print).
+
+<h2>1. Preparation of an input meteorological data</h2>
+[SIGMA-B_LT20140714-_Lv1_3.csv] is an example.
 <br><B>year</B>
 <br><B>month</B>
 <br><B>day</B>
@@ -23,19 +26,19 @@
 <br>Parameters with asterisk [*] should be prepared to calculate the CH depth. [sru] and [srf] are not always required but, if unavailable, put any dummy values.
 <br>It is not required the data starting time from "0" hour, the calculation should be performed for XX days x 24 hours.
 
-<B>2. Preparation of parameters</B>
-<br>Edit "parameter.ini" by a text editor. The setting of distributed version is that for Site 2 in 2014 to represent the camera-based CH depth.
+<h2>2. Preparation of parameters</h2>
+Edit "parameter.ini" by a text editor. The setting of distributed version is that for Site 2 in 2014 to represent the camera-based CH depth.
 
-<B>3. Installation of Fortran</B>
-<br>This is out of this instruction. Please prepare it by yourself.
+<h2>3. Installation of Fortran</h2>
+This is out of this instruction. Please prepare it by yourself.
 
-<B>4. Operation</B>
-<br>Open a terminal at the folder containing the code, input data, and parameter files. Compile the code "cryho_disclose_version1.f90", and run the created execute file. You will get an output file [ch_hourly_2014_v3_monitor_at39_di51_id117_ai62.csv] (the file name can be changed. see next).
+<h2>4. Operation</h2>
+Open a terminal at the folder containing the code, input data, and parameter files. Compile the code "cryho_disclose_version1.f90", and run the created execute file. You will get an output file [ch_hourly_2014_v3_monitor_at39_di51_id117_ai62.csv] (the file name can be changed. see next).
 <br>The model simulations with parameters observed in Qaanaaq Ice Cap can be conducted by using "shell/cal_obs.sh".
 <br>Note that cryho_disclose_version1_stest.f90, cryho_disclose_version1_Rscexp_LT13.f90 and cryho_disclose_version1_Rscexp_LT01.f90 are model codes for sensitivity tests (for Figs 9, 11a and 11b, respectively). Please use appropriate parameter file (i.e., parameter.ini_2014_S2_v3_stest or parameter.ini_2014_S2_v3_Rscexp). The sensitivity tests can be conducted by using shell scripts (stest.sh and stest_Rscexp.sh).
 
-<B>5. Output file</B>
-<br>You can change the file name at the second line of parameter.ini.
+<h2>5. Output file</h2>
+You can change the file name at the second line of parameter.ini.
 <br><B>days_for_graph: day and time for graph</B>
 <br><B>month</B>
 <br><B>day</B>
