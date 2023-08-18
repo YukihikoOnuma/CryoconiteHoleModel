@@ -1,6 +1,6 @@
 <HTML><h3>Instruction for Cryoconite Hole Model (CryHo)</h3>
 
-<P ALIGN=JUSTIFY>The model was developed by <B>Koji Fujita</B>, Nagoya University, Japan. The study using this model was published in The Cryosphere (Onuma et al., 2023). This text is an instruction to use the model.</P>
+<P ALIGN=JUSTIFY>The model was developed by <B>Koji Fujita</B>, Nagoya University, Japan. The study using this model was published in The Cryosphere <B>(Onuma et al., 2023, doi:10.5194/tc-17-3309-2023)</B>. This text is an instruction to use the model.</P>
 
 <B>1. Preparation of an input meteorological data</B>
 <br>[SIGMA-B_LT20140714-_Lv1_3.csv] is an example.
@@ -69,3 +69,6 @@
 <br>t_diffuse: transmittance of ice for diffuse component of SR (-)
 <br>k_direct: extinction coefficient of ice for direct component of SR (m^-1)
 <br>k_diffuse: extinction coefficient of ice for diffuse component of SR (m^-1)
+
+<B>Reference:</B>
+<br>Onuma, Y., Fujita, K., Takeuchi, N., Niwano, M., and Aoki, T.: Modelling the development and decay of cryoconite holes in northwestern Greenland, The Cryosphere, 17, 3309–3328, https://doi.org/10.5194/tc-17-3309-2023, 2023.
